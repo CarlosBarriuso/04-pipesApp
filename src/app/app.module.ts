@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { AppRouterModule } from './app-router.module';
 import { VentasModule } from './ventas/ventas.module';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 //CAmbiar el locale de la app
 import localeEs from "@angular/common/locales/es";
@@ -26,7 +27,8 @@ registerLocaleData( localeJa );
     SharedModule,
     RouterModule,
     AppRouterModule,
-    VentasModule
+    VentasModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'es'}
