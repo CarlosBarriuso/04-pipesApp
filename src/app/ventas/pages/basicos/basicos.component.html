@@ -56,6 +56,13 @@
         <li>Fecha | date:'long'</li>
         <li>Fecha | date:'custom'  date:'H:mm:ss  del EEEE d-M-YYYY '</li>
       </ul>
+      <hr>
+      <ul>
+        <li>Fecha | date:'long':'GMT-6' </li>
+        <li>Fecha | date:'long':'GMT-0'</li>
+        <li>Fecha | date:'long':'':'en' en Inglés</li>
+        <li>Fecha | date:'long':'':'ja' en Japonés</li>
+      </ul>
     </p-card>
   </div>
   <div class="col-6">
@@ -66,6 +73,13 @@
         <li>{{ fecha | date:'short' }}</li>
         <li>{{ fecha | date:'long' }}</li>
         <li>{{ fecha | date:'H:mm:ss  **  EEEE d-M-YYYY ' }}</li>
+      </ul>
+      <hr>
+      <ul>
+        <li>{{ fecha | date:'long':'GMT-6' }}</li>
+        <li>{{ fecha | date:'long':'GMT-0' }}</li>
+        <li>{{ fecha | date:'long':'':'en' }}</li>
+        <li>{{ fecha | date:'long':'':'ja' }}</li>
       </ul>
     </p-card>
   </div>
