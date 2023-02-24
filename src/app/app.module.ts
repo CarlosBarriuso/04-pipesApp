@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 
 //Modulo personalizado
 import { SharedModule } from './shared/shared.module';
+import { RouterModule } from '@angular/router';
+import { AppRouterModule } from './app-router.module';
 
 
 
@@ -15,7 +17,9 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
-    SharedModule
+    SharedModule,
+    RouterModule,
+    AppRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
