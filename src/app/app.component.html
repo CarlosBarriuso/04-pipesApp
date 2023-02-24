@@ -1,12 +1,16 @@
-<h1>Hola {{ nombre | titlecase }}</h1>
-
-<button (click)="cambiarNombre()">
-  Cambiar nombre
+<div class="text-layout">
+  <h1> {{ nombre | titlecase }}</h1>
+  <h1> {{ valor | number }}</h1>
+  <h1> {{ obj | json }}</h1>
+</div>
+<button pButton
+        (click)="mostrarNombre()"
+        icon="pi pi-check"
+        iconPos="right"
+        class="p-button-help"
+        label="Mostar Nombre"
+        >
 </button>
-
-
-<h1> {{ nombre | titlecase }}</h1>
-<h1> {{ valor | number }}</h1>
-<h1> {{ obj | json }}</h1>
-
-<button (click)="mostrarNombre()">Mostar</button>
+<p-card header="header">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+</p-card>
