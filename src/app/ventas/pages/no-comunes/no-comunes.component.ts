@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -37,4 +38,38 @@ export class NoComunesComponent {
     this.clientes.shift();
   }
 
+  //KeyValue Pipe
+  persona = {
+    nombre: 'Carlos',
+    edad: 46,
+    direccion: 'Madrid, España'
+  }
+
+  //Json Pipe
+  heroes = [
+    {
+      nombre: 'Sperman',
+      vuela: true,
+    },
+    {
+      nombre: 'Fuckman',
+      vuela: false,
+    },
+    {
+      nombre: 'Idiotaman',
+      vuela: true,
+    }
+  ]
+
+
+  //Async Pipe
+  //El observable se ejecuta hasta que tiene una suscripción
+  miObservable = interval(2000);//Emite valores numericos
+
+  // recibe un callback, con la funcion resolve cuando sale bien y en caso de error el reject
+  valorPromesa = new Promise((resolve, reject) => {
+    setTimeout(() =>{
+      resolve('Tenemos datos de la promesa');
+    }, 3500);
+  });
 }
